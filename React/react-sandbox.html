@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first React file</title>
+		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+		<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+	</head>
+	<body>
+		<div id="react-container"></div>
+		
+		<!-- harder version
+		<script>
+			ReactDOM.render(React.createElement('div', null, 'Hello World!'),
+			document.getElementById('react-container'))
+		</script> -->
+		
+		<!-- easier version, using JSX and Babel -->
+		<script type="text/babel">
+			ReactDOM.render(
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+				</ul>,
+				document.getElementById('react-container'))
+		</script>		
+	</body>
+</html>
